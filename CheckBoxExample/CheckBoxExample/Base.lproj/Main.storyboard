@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Conte-->
+        <scene sceneID="U36-qh-DEz">
+            <objects>
+                <viewController storyboardIdentifier="SelecaoPecasServicosViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Dd-c2-hgR" customClass="Conte" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="34W-se-Pa2"/>
+                        <viewControllerLayoutGuide type="bottom" id="VdB-KW-dF5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ncs-gr-QGF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kk2-BO-irh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="558"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ManutencaoSelecaoCell" rowHeight="44" id="iJ6-M4-YDx" customClass="ManutencaoSelecaoCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iJ6-M4-YDx" id="cZc-hY-U6J">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTq-Ov-brR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnSelecao" destination="HTq-Ov-brR" id="wSq-1j-KCJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlY-GD-uKh">
+                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5Lm-aH-ePC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HlY-GD-uKh" firstAttribute="top" secondItem="kk2-BO-irh" secondAttribute="bottom" constant="1" id="6Hk-fy-IRv"/>
+                            <constraint firstItem="HlY-GD-uKh" firstAttribute="leading" secondItem="Ncs-gr-QGF" secondAttribute="leading" id="E0c-FM-ybO"/>
+                            <constraint firstAttribute="trailing" secondItem="HlY-GD-uKh" secondAttribute="trailing" id="Irq-Tj-4Ih"/>
+                            <constraint firstItem="kk2-BO-irh" firstAttribute="leading" secondItem="Ncs-gr-QGF" secondAttribute="leading" id="TmI-HA-zLk"/>
+                            <constraint firstAttribute="trailing" secondItem="kk2-BO-irh" secondAttribute="trailing" id="brh-ma-I1k"/>
+                            <constraint firstItem="kk2-BO-irh" firstAttribute="top" secondItem="34W-se-Pa2" secondAttribute="bottom" id="eZU-B9-QKg"/>
+                            <constraint firstItem="VdB-KW-dF5" firstAttribute="top" secondItem="HlY-GD-uKh" secondAttribute="bottom" id="uX3-73-Hh5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nrh-Wq-BAw"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HpA-rt-kHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-191" y="85"/>
+        </scene>
+    </scenes>
+</document>

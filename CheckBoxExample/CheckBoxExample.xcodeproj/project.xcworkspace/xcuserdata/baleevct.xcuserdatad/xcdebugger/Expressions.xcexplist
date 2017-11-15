@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ContentCheckBoxViewController.tableView(_:didSelectRowAt:):ContentCheckBoxViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ContentCheckBoxViewController.tableView(_:numberOfRowsInSection:):ContentCheckBoxViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ContentCheckBoxViewController.tableView(_:cellForRowAt:):ContentCheckBoxViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SelectionCell.configCell(option:):SelectionCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "btnSelection.isSelected">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
